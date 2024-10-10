@@ -18,6 +18,7 @@ public class Player {
     private static final int JUMP_STRENGTH = 10;
     private static final double GRAVITY = 0.5;
     private static final int TILE_SIZE = 48;
+    private static final double dashStrength = 10;
 
     protected GamePanel gp;
     protected KeyHandler keyH;
@@ -35,6 +36,11 @@ public class Player {
         isJumping = false;
         isOnGround = true;
         verticalVelocity = 0;
+    }
+
+    public void Dash()
+    {
+        pass;
     }
 
     public void update() {
