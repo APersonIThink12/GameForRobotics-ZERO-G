@@ -40,7 +40,10 @@ public class Player {
 
     public void Dash()
     {
-        pass;
+        if (KeyH.shiftPressed && KeyH.leftPressed)
+        {
+            x -= dashStrength;
+        }
     }
 
     public void update() {
