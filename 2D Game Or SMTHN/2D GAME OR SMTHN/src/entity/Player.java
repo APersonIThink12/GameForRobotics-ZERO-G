@@ -47,6 +47,9 @@ public class Player {
     }
 
     public void update() {
+
+        Dash();
+        
         // Horizontal movement
         if (keyH.leftPressed) {
             x -= speed;
