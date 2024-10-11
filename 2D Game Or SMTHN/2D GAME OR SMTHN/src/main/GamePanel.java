@@ -19,6 +19,7 @@ public class GamePanel extends JPanel implements Runnable {
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     Player player = new Player(this, keyH);
+    Spike spike = new Spike(this, pass);
 
     int playerX = 100;
     int playerY = 564;
@@ -26,7 +27,7 @@ public class GamePanel extends JPanel implements Runnable {
     double jumpStrength = 7; // Use double for precise control
     double gravity = 0.2; // Lower gravity strength
     boolean isJumping;
-    boolean isOnGround; // Renamed for clarity
+    boolean isOnGround;
     double verticalVelocity = 0;
 
     public GamePanel() {
@@ -75,6 +76,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void update() {
         player.update();
+        spike.update();
     }
 
     @Override
