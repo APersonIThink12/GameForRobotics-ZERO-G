@@ -18,8 +18,8 @@ public class Player {
     private static final int JUMP_STRENGTH = 10;
     private static final double GRAVITY = 0.5;
     private static final int TILE_SIZE = 48;
-    private static final double dashStrength = 10;
-    private static final int health = 100;
+    private static int dashStrength = 10;
+    private static int health = 100;
     
 
     protected GamePanel gp;
