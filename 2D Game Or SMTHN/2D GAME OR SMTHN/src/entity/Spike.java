@@ -8,10 +8,9 @@ import java.awt.*;
 public class Spike {
 
 
-  
   public void update()
   {
-    pass;  
+    pass;
   }
 
   
